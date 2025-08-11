@@ -42,6 +42,13 @@
 
 vectorbt allows you to easily backtest strategies with a couple of lines of Python code.
 
+* Build a docker image:
+sudo docker build --network=host -f docker/Dockerfile_gpu -t pint1022/vectorbt:base .
+
+sudo docker push pint1022/vectorbt:base
+
+sudo docker pull pint1022/vectorbt:base
+
 * Here is how much profit we would have made if we invested $100 into Bitcoin in 2014:
 
 ```python
